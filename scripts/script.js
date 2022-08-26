@@ -185,7 +185,7 @@ function scroll(selfHeight, selfY) {
 
      
 
-        // console.log(hrefNow);
+        console.log(hrefNow);
 
         windowScrollPosition = $(window).scrollTop();
 
@@ -197,7 +197,8 @@ function scroll(selfHeight, selfY) {
                     "file:///C:/Users/User/Desktop/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20Kodland%202/index.html#t0") ||
             hrefNow ==
                 "file:///C:/Users/Someone/Documents/GitHub/-Kodland-2/index.html#t0" ||
-            hrefNow == "http://127.0.0.1:5500/#t0"
+            hrefNow == "http://127.0.0.1:5500/#t0" ||
+            hrefNow == 'file:///C:/Users/Someone/Documents/GitHub/My-Kodland-project-2/index.html#t0'
         ) {
             anime({
                 targets: ".advArt",
@@ -214,7 +215,9 @@ function scroll(selfHeight, selfY) {
                     "file:///C:/Users/User/Desktop/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20Kodland%202/index.html#t1") ||
             hrefNow ==
                 "file:///C:/Users/Someone/Documents/GitHub/-Kodland-2/index.html#t1" ||
-            hrefNow == "http://127.0.0.1:5500/#t1"
+            hrefNow == "http://127.0.0.1:5500/#t1"||
+            hrefNow == 'file:///C:/Users/Someone/Documents/GitHub/My-Kodland-project-2/index.html#t1'
+
         ) {
             anime({
                 targets: ".online *",
@@ -232,7 +235,9 @@ function scroll(selfHeight, selfY) {
                     "file:///C:/Users/User/Desktop/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20Kodland%202/index.html#t2") ||
             hrefNow ==
                 "file:///C:/Users/Someone/Documents/GitHub/-Kodland-2/index.html#t2" ||
-            hrefNow == "http://127.0.0.1:5500/#t2"
+            hrefNow == "http://127.0.0.1:5500/#t2"||
+            hrefNow == 'file:///C:/Users/Someone/Documents/GitHub/My-Kodland-project-2/index.html#t2'
+
         ) {
             anime({
                 targets: ".years",
