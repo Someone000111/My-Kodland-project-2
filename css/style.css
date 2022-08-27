@@ -1325,7 +1325,7 @@ body {
     }
 }
 
-@media (max-width: 999px) and (min-width: 768px) {
+@media (max-width: 999px) {
     .burger_menu {
         display: block;
     }
@@ -1645,13 +1645,13 @@ body {
         justify-content: center;
         background-color: #374143;
         color: white;
-        
+
         text-align: center;
         padding: 10px 0;
         border-radius: 16px;
     }
 
-    .footer_contacts h4{
+    .footer_contacts h4 {
         width: 100%;
     }
     .footer_menu_list {
@@ -1682,28 +1682,26 @@ body {
         align-items: center;
         text-align: center;
         width: 100%;
-        
     }
 
-    .contacts_img path{
+    .contacts_img path {
         fill: white;
     }
 
-    .contacts_img svg{
+    .contacts_img svg {
         fill: #959595;
         display: flex;
         justify-content: center;
         align-items: center;
-    
     }
-    .contacts_img svg:hover path{
+    .contacts_img svg:hover path {
         fill: #d0b194 !important;
-        
-    
     }
 
-
-    .footer768 a:not(.memor):hover{
+    .footer768 a:not(.memor):hover {
         color: #d0b194 !important;
     }
+}
+
+@media (max-width: 768px) {
 }
