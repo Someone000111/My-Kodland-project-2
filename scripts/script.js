@@ -1,4 +1,6 @@
-$(document).ready(function (log) {});
+// Define the query
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+
 
 // Войти или зарег.querySelector(".formInner");
 
