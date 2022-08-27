@@ -32,6 +32,11 @@ white
     text-decoration-line: none;
 }
 
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .preloader {
     display: none;
     flex-direction: column;
@@ -117,6 +122,14 @@ nav {
     align-items: center;
     margin-bottom: 170px;
     color: #2f2f2f;
+
+    padding: 10px 20px;
+    border-radius: 16px;
+    background: #fdf8f475;
+}
+
+.burger_menu{
+    display: none;
 }
 
 .nav2 {
@@ -272,7 +285,7 @@ span {
     justify-content: space-between;
     gap: 20px;
     padding: 0px;
-    
+
     margin: 80px 60px 0 35px;
     height: auto;
 }
@@ -452,7 +465,7 @@ main {
 }
 
 .block3_img {
-    width: calc(100vh - 45px);
+    width: 45%;
     border-radius: 0px 32px 32px 0px;
 }
 
@@ -800,7 +813,7 @@ a:not(.memor):hover {
     border: 2px solid #d0b194;
     border-radius: 32px;
 
-    width: 30%;
+    width: auto;
 }
 
 .close {
@@ -873,7 +886,7 @@ a:not(.memor):hover {
 
     cursor: text;
 
-    /* background: none; */
+    background: #fdf8f475;
 }
 
 .formInner {
@@ -889,7 +902,7 @@ a:not(.memor):hover {
 
 .sign_or_log h1 {
     cursor: pointer;
-    font-size: 1.4em !important;
+    font-size: 115% !important;
 }
 
 .sign_or_log h1:first-child {
@@ -1140,6 +1153,9 @@ body {
 .family.img2 {
     display: none;
 }
+
+
+
 /* 1 медиа запрос */
 
 @media (min-width: 1000px) and (max-width: 1200px) {
@@ -1161,7 +1177,159 @@ body {
         width: 230px;
         /* height: 42px; */
     }
+
+    .nav-list,
+    .on_button {
+        display: none !important;
+    }
+
+    .label_checkbox_account svg path {
+        animation: none;
+        stroke: #374143;
+    }
+
+    .on_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        background: #374143;
+        color: white;
+        border-radius: 16px;
+    }
+
+    .ADVs {
+        width: auto;
+    }
+
+    .adv {
+        width: 250px;
+    }
+
+    .adv_text {
+        margin: 65px 50px 35px 30px;
+    }
+
+    .adv_text h3 {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 100%;
+
+        color: #ffffff;
+    }
+
+    .adv_text p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+
+        margin-top: 20px;
+    }
+
+   
+    .block1 {
+        gap: 55px;
+        padding-bottom: 25px;
+    }
+
+    .block2,
+    .block3 {
+        margin: 0 50px;
+    }
+
+    .articles {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .block3 {
+        margin: 50px 0;
+    }
+
+    .bx-wrapper {
+        width: 100% !important;
+        margin-left: 50px;
+    }
+
+    .block3_img {
+        width: 50%;
+        position: relative;
+        right: 50px;
+    }
+
+    .online_header {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .online h4 {
+        margin-bottom: 20px;
+    }
+
+    .groups {
+        margin-bottom: 30px;
+    }
+
+    .family {
+        width: 45%;
+        margin-left: 15px;
+    }
+
+    .family.big {
+        width: 40% !important;
+    }
+
+    .family.img1 {
+        display: none;
+    }
+
+    .family.img2 {
+        display: inline-block;
+    }
+
+    .button_up {
+        right: 50px;
+    }
+
+    .topBtn {
+        right: 100px;
+    }
+
+    .bottomBtn {
+        right: 150px;
+    }
+}
+
+@media (max-width: 999px) and (min-width: 768px) {
+    .burger_menu {
+        display: block;
+    }
+
     
+
+    h1 {
+        font-size: 64px !important;
+    }
+
+    h2 {
+        font-size: 48px !important;
+    }
+
+    /* голова */
+    header {
+        padding: 60px 50px 50px;
+        background-position-x: right;
+    }
+
+    .logo {
+        width: 230px;
+        /* height: 42px; */
+    }
+
     .nav-list,
     .on_button {
         display: none !important;
@@ -1275,7 +1443,7 @@ body {
     }
 
     .button_up {
-        right: 0;
+        right: 50px;
     }
 
     .topBtn {
@@ -1283,6 +1451,6 @@ body {
     }
 
     .bottomBtn {
-        right: 200px;
+        right: 150px;
     }
 }
