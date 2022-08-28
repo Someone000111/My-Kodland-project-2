@@ -1174,6 +1174,45 @@ body {
 .footer768 {
     display: none !important;
 }
+
+.ULLIST {
+    position: fixed;
+    top: 10vh;
+    left: -1000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 80vh;
+    width: 40vw;
+
+    background: #374143;
+    border-radius: 0px 16px 16px 0px;
+
+    z-index: 500;
+    transition: left 1s;
+}
+
+.ULLIST.active {
+    left: 0;
+    transition: left 1s;
+}
+.ULLIST a {
+    color: white;
+}
+
+.ULLIST .account_logo path {
+    stroke: #d0b194;
+}
+
+.ULLIST .on_button {
+    display: block !important;
+    background-color: #d0b194;
+    color: white;
+}
+
 /* 1 медиа запрос */
 
 @media (min-width: 1000px) and (max-width: 1200px) {
@@ -1462,6 +1501,7 @@ body {
         display: flex;
         flex-direction: row !important;
         justify-content: space-evenly;
+        /* align-items: center; */
         width: 100%;
     }
 
@@ -1700,6 +1740,22 @@ body {
 
     .footer768 a:not(.memor):hover {
         color: #d0b194 !important;
+    }
+
+    .article_div h3 {
+        cursor: pointer;
+    }
+    .article_name {
+        align-self: center;
+    }
+
+    .article_name.activeArt {
+        background-color: #d0b194 !important;
+        border-radius: 16px;
+        padding: 10px 20px;
+    }
+    .adv {
+        height: auto;
     }
 }
 

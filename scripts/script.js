@@ -1,6 +1,88 @@
 // Define the query
 const mediaQuery = window.matchMedia("(min-width: 768px)");
 
+$(document).ready(function () {
+    if (window.innerWidth > 900) {
+        document.querySelector(".block3_img").style.objectPosition = "top";
+    } else {
+        document.querySelector(".block3_img").style.objectPosition = "center";
+    }
+});
+// Меню-бургер
+
+function openMenuBar() {
+    anime({
+        targets: ".burger_menu",
+        rotate: 90,
+        duration: 500,
+        delay: anime.stagger(100),
+        loop: false,
+    });
+    $(".ULLIST").toggleClass("active");
+
+    menuButton.addEventListener("click", function () {
+        anime({
+            targets: ".burger_menu",
+            rotate: 0,
+            duration: 500,
+            delay: anime.stagger(100),
+            loop: false,
+        });
+        menuButton.addEventListener("click", function () {
+            anime({
+                targets: ".burger_menu",
+                rotate: 90,
+                duration: 500,
+                delay: anime.stagger(100),
+                loop: false,
+            });
+            menuButton.addEventListener("click", function () {
+                anime({
+                    targets: ".burger_menu",
+                    rotate: 0,
+                    duration: 500,
+                    delay: anime.stagger(100),
+                    loop: false,
+                });
+            });
+        });
+    });
+}
+
+let menuButton = document.querySelector(".burger_menu");
+
+menuButton.addEventListener("click", openMenuBar);
+
+$(document).ready(function () {
+    let articleList = document.querySelectorAll(".article_name");
+    let articleListOfElements = [];
+
+    articleList.forEach(element => {
+        articleListOfElements.push(element);
+    });
+
+    articleListOfElements.forEach(element => {
+        element.addEventListener("click", function () {
+            articleListOfElements.forEach(element => {
+                element.classList.remove("activeArt");
+            });
+            element.classList.add("activeArt");
+            console.log($(this).index());
+            if ($(this).index() == 0) {
+                document.querySelector(".article_text").innerHTML =
+                    "Бережно монтируем кабель, без повреждений интерьера вашей квартиры или дома";
+            } else if ($(this).index() == 2) {
+                document.querySelector(".article_text").innerHTML =
+                    " Благодаря GPON и резервной линии, гарантируем скорость прямо по договору";
+            } else if ($(this).index() == 4) {
+                document.querySelector(".article_text").innerHTML =
+                    "Круглосуточная помощь в приложении или по горячей линии, даже в праздники";
+            }
+        });
+    });
+});
+// $('.article_text')
+
 // Войти или зарег.querySelector(".formInner");
 
 let formInner = document.querySelector(".formInner");
@@ -196,7 +278,7 @@ function scroll(selfHeight, selfY) {
                     "file:///C:/Users/User/Desktop/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20Kodland%202/index.html#t0") ||
             hrefNow ==
                 "file:///C:/Users/Someone/Documents/GitHub/-Kodland-2/index.html#t0" ||
-            hrefNow == "http://127.0.0.1:5500/#t0" ||
+            hrefNow == "http://127.0.0.1:5500/index.html#t0" ||
             hrefNow ==
                 "file:///C:/Users/Someone/Documents/GitHub/My-Kodland-project-2/index.html#t0"
         ) {
@@ -215,7 +297,7 @@ function scroll(selfHeight, selfY) {
                     "file:///C:/Users/User/Desktop/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20Kodland%202/index.html#t1") ||
             hrefNow ==
                 "file:///C:/Users/Someone/Documents/GitHub/-Kodland-2/index.html#t1" ||
-            hrefNow == "http://127.0.0.1:5500/#t1" ||
+            hrefNow == "http://127.0.0.1:5500/index.html#t1" ||
             hrefNow ==
                 "file:///C:/Users/Someone/Documents/GitHub/My-Kodland-project-2/index.html#t1"
         ) {
@@ -235,7 +317,7 @@ function scroll(selfHeight, selfY) {
                     "file:///C:/Users/User/Desktop/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20Kodland%202/index.html#t2") ||
             hrefNow ==
                 "file:///C:/Users/Someone/Documents/GitHub/-Kodland-2/index.html#t2" ||
-            hrefNow == "http://127.0.0.1:5500/#t2" ||
+            hrefNow == "http://127.0.0.1:5500/index.html#t2" ||
             hrefNow ==
                 "file:///C:/Users/Someone/Documents/GitHub/My-Kodland-project-2/index.html#t2"
         ) {
