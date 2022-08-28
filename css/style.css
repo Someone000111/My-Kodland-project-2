@@ -1199,6 +1199,8 @@ body {
     left: 0;
     transition: left 1s;
 }
+
+
 .ULLIST a {
     color: white;
 }
@@ -1212,6 +1214,7 @@ body {
     background-color: #d0b194;
     color: white;
 }
+
 
 /* 1 медиа запрос */
 
@@ -1756,6 +1759,10 @@ body {
     }
     .adv {
         height: auto;
+    }
+
+     .hide{
+        display: none;
     }
 }
 
