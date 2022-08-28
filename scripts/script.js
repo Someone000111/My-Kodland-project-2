@@ -398,7 +398,7 @@ $(document).ready(function () {
         prevSelector: $(".bx-prevCont"),
         nextSelector: $(".bx-nextCont"),
         randomStart: false,
-        touchEnabled: false,
+        touchEnabled: true,
         adaptiveHeight: true,
 
         // responsive: true,
