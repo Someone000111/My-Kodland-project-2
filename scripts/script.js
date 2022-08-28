@@ -281,7 +281,8 @@ function scroll(selfHeight, selfY) {
             hrefNow == "http://127.0.0.1:5500/index.html#t0" ||
             hrefNow ==
                 "file:///C:/Users/Someone/Documents/GitHub/My-Kodland-project-2/index.html#t0" ||
-                hrefNow == "https://someone000111.github.io/My-Kodland-project-2/#t0"
+            hrefNow ==
+                "https://someone000111.github.io/My-Kodland-project-2/#t0"
         ) {
             anime({
                 targets: ".advArt",
@@ -300,8 +301,9 @@ function scroll(selfHeight, selfY) {
                 "file:///C:/Users/Someone/Documents/GitHub/-Kodland-2/index.html#t1" ||
             hrefNow == "http://127.0.0.1:5500/index.html#t1" ||
             hrefNow ==
-                "file:///C:/Users/Someone/Documents/GitHub/My-Kodland-project-2/index.html#t1"||
-                hrefNow == "https://someone000111.github.io/My-Kodland-project-2/#t1"
+                "file:///C:/Users/Someone/Documents/GitHub/My-Kodland-project-2/index.html#t1" ||
+            hrefNow ==
+                "https://someone000111.github.io/My-Kodland-project-2/#t1"
         ) {
             anime({
                 targets: ".online *",
@@ -322,7 +324,8 @@ function scroll(selfHeight, selfY) {
             hrefNow == "http://127.0.0.1:5500/index.html#t2" ||
             hrefNow ==
                 "file:///C:/Users/Someone/Documents/GitHub/My-Kodland-project-2/index.html#t2" ||
-                hrefNow == "https://someone000111.github.io/My-Kodland-project-2/#t2"
+            hrefNow ==
+                "https://someone000111.github.io/My-Kodland-project-2/#t2"
         ) {
             anime({
                 targets: ".years",
